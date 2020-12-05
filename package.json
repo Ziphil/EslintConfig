@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-ziphil",
+  "version": "1.0.0",
+  "author": "Ziphil",
+  "description": "My personal configurations for ESLint",
+  "homepage": "https://github.com/Ziphil/EslintConfig",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "develop": "ts-node source/index.ts",
+    "build": "tsc",
+    "prepare": "tsc"
+  },
+  "devDependencies": {
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/eslint-plugin-tslint": "^4.9.0",
+    "eslint": "^7.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsdoc": "^30.7.8"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^4.9.0"
+  }
+}
