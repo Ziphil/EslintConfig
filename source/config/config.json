@@ -1,6 +1,7 @@
 {
   "env": {
-    "browser": true
+    "browser": true,
+    "node": true
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -25,22 +26,28 @@
       "warn",
       {
         "types": {
-          "Object": {
-            "message": "Avoid using the `Object` type. Did you mean `object`?"
+          "String": {
+            "message": "Use string instead",
+            "fixWith": "string"
           },
           "Boolean": {
-            "message": "Avoid using the `Boolean` type. Did you mean `boolean`?"
+            "message": "Use boolean instead",
+            "fixWith": "boolean"
           },
           "Number": {
-            "message": "Avoid using the `Number` type. Did you mean `number`?"
-          },
-          "String": {
-            "message": "Avoid using the `String` type. Did you mean `string`?"
+            "message": "Use number instead",
+            "fixWith": "number"
           },
           "Symbol": {
-            "message": "Avoid using the `Symbol` type. Did you mean `symbol`?"
+            "message": "Use symbol instead",
+            "fixWith": "symbol"
+          },
+          "Object": {
+            "message": "Use object instead",
+            "fixWith": "object"
           }
-        }
+        },
+        "extendDefaults": false
       }
     ],
     "@typescript-eslint/explicit-member-accessibility": [
@@ -49,33 +56,13 @@
         "accessibility": "explicit"
       }
     ],
-    "@typescript-eslint/indent": [
-      "warn",
-      2,
-      {
-        "FunctionDeclaration": {
-          "parameters": "first"
-        },
-        "FunctionExpression": {
-          "parameters": "first"
-        }
-      }
-    ],
-    "@typescript-eslint/member-delimiter-style": [
+    "@typescript-eslint/naming-convention": [
       "warn",
       {
-        "multiline": {
-          "delimiter": "semi",
-          "requireLast": true
-        },
-        "singleline": {
-          "delimiter": "semi",
-          "requireLast": false
-        }
+        "selector": "default",
+        "format": ["camelCase", "PascalCase", "UPPER_CASE"]
       }
     ],
-    "@typescript-eslint/naming-convention": "warn",
-    "@typescript-eslint/no-empty-interface": "warn",
     "@typescript-eslint/no-misused-new": "warn",
     "@typescript-eslint/no-namespace": "warn",
     "@typescript-eslint/no-parameter-properties": "warn",
@@ -91,6 +78,14 @@
     "@typescript-eslint/semi": [
       "warn",
       "always"
+    ],
+    "@typescript-eslint/space-before-function-paren": [
+      "warn",
+      {
+        "anonymous": "always",
+        "asyncArrow": "always",
+        "named": "never"
+      }
     ],
     "@typescript-eslint/triple-slash-reference": [
       "warn",
@@ -120,9 +115,22 @@
       "always"
     ],
     "guard-for-in": "warn",
+    "indent": [
+      "warn",
+      2
+    ],
     "id-blacklist": "warn",
     "id-match": "warn",
-    "import/order": "warn",
+    "import/order": [
+      "warn",
+      {
+        "groups": [["builtin", "external"], "internal", "parent", "sibling", "index", "object"],
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": false
+        }
+      }
+    ],
     "jsdoc/check-alignment": "warn",
     "jsdoc/check-indentation": "warn",
     "jsdoc/newline-after-description": "warn",
@@ -162,14 +170,6 @@
     "quote-props": [
       "warn",
       "consistent-as-needed"
-    ],
-    "space-before-function-paren": [
-      "warn",
-      {
-        "anonymous": "always",
-        "asyncArrow": "always",
-        "named": "never"
-      }
     ],
     "space-in-parens": [
       "warn",
