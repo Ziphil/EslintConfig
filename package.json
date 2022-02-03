@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-ziphil",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": "Ziphil",
   "description": "My personal configurations for ESLint",
   "homepage": "https://github.com/Ziphil/EslintConfig",
