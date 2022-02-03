@@ -125,6 +125,20 @@
       "warn",
       {
         "groups": [["builtin", "external"], "internal", "parent", "sibling", "index", "object"],
+        "pathGroups": [
+          {
+            "pattern": "/client/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "/server/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "/source/**",
+            "group": "internal"
+          }
+        ],
         "alphabetize": {
           "order": "asc",
           "caseInsensitive": false
@@ -170,6 +184,14 @@
     "quote-props": [
       "warn",
       "consistent-as-needed"
+    ],
+    "sort-imports": [
+      "warn",
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false
+      }
     ],
     "space-in-parens": [
       "warn",
