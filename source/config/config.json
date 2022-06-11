@@ -162,7 +162,8 @@
         "alphabetize": {
           "order": "asc",
           "caseInsensitive": false
-        }
+        },
+        "newlines-between": "never"
       }
     ],
     "jsdoc/check-alignment": "warn",
