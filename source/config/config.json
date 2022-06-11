@@ -104,7 +104,7 @@
     "@typescript-eslint/unified-signatures": "warn",
     "array-bracket-spacing": [
       "warn",
-      "always"
+      "never"
     ],
     "arrow-body-style": "warn",
     "arrow-parens": [
