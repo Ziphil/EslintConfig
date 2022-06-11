@@ -102,10 +102,25 @@
     ],
     "@typescript-eslint/type-annotation-spacing": "warn",
     "@typescript-eslint/unified-signatures": "warn",
+    "array-bracket-spacing": [
+      "warn",
+      "always"
+    ],
     "arrow-body-style": "warn",
     "arrow-parens": [
       "warn",
       "always"
+    ],
+    "arrow-spacing": [
+      "warn",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "block-spacing": [
+      "warn",
+      "never"
     ],
     "brace-style": [
       "warn",
@@ -153,6 +168,13 @@
     "jsdoc/check-alignment": "warn",
     "jsdoc/check-indentation": "warn",
     "jsdoc/newline-after-description": "warn",
+    "keyword-spacing": [
+      "warn",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
     "new-parens": "warn",
     "no-bitwise": "warn",
     "no-caller": "warn",
@@ -182,6 +204,10 @@
     "no-unused-labels": "warn",
     "no-var": "warn",
     "object-shorthand": "warn",
+    "object-curly-spacing": [
+      "warn",
+      "never"
+    ],
     "one-var": [
       "warn",
       "never"
@@ -258,6 +284,10 @@
         "ignoreDeclarationSort": true,
         "ignoreMemberSort": false
       }
+    ],
+    "space-before-blocks": [
+      "warn",
+      "always"
     ],
     "space-in-parens": [
       "warn",
