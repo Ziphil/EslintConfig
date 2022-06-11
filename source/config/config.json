@@ -168,6 +168,7 @@
     "jsdoc/check-alignment": "warn",
     "jsdoc/check-indentation": "warn",
     "jsdoc/newline-after-description": "warn",
+    "key-spacing": "warn",
     "keyword-spacing": [
       "warn",
       {
