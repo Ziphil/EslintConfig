@@ -302,8 +302,26 @@
         ]
       }
     ],
+    "switch-colon-spacing": [
+      "warn",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "template-tag-spacing": [
+      "warn",
+      "never"
+    ],
     "unused-imports/no-unused-imports": "warn",
     "use-isnan": "warn",
+    "yield-star-spacing": [
+      "warn",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
     "yoda": "warn"
   }
 }
