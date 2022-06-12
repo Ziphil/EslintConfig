@@ -378,6 +378,14 @@
     "react/require-render-return": "warn",
     "rest-spread-spacing": "warn",
     "semi-style": "warn",
+    "sort-imports": [
+      "warn",
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": true,
+        "ignoreMemberSort": false
+      }
+    ],
     "space-in-parens": [
       "warn",
       "never"
